@@ -1,5 +1,15 @@
+/* FONTE */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap');
 
+/* VARIÁVEIS (PROFISSIONAL) */
+:root {
+  --verde: #7F8C1B;
+  --verde-escuro: #515911;
+  --cinza: #404040;
+  --branco: #FFFFFF;
+}
+
+/* RESET */
 * {
   margin: 0;
   padding: 0;
@@ -8,38 +18,51 @@
 }
 
 body {
-  background: #404040;
-  color: #fff;
+  background: var(--cinza);
+  color: var(--branco);
+}
+
+/* CONTAINER */
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 20px;
 }
 
 /* HERO */
-header {
-  background: linear-gradient(135deg, #7F8C1B, #515911);
-  padding: 100px 20px;
+.hero {
+  background: linear-gradient(135deg, var(--verde), var(--verde-escuro));
+  padding: 120px 20px;
   text-align: center;
   position: relative;
   overflow: hidden;
 }
 
-header::after {
+.hero::after {
   content: "";
   position: absolute;
   width: 500px;
   height: 500px;
-  background: #7F8C1B;
+  background: var(--verde);
   filter: blur(160px);
   top: -150px;
   right: -150px;
   opacity: 0.5;
 }
 
-header h1 {
-  font-size: 56px;
+.hero h1 {
+  font-size: 60px;
   font-weight: 800;
   letter-spacing: 2px;
 }
 
-header p {
+.subtitle {
+  font-size: 20px;
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+.hero p {
   margin-top: 10px;
   font-size: 18px;
   opacity: 0.95;
@@ -48,33 +71,33 @@ header p {
 /* BOTÃO */
 .btn {
   display: inline-block;
-  margin-top: 25px;
-  padding: 14px 30px;
-  background: #7F8C1B;
-  color: #fff;
-  border-radius: 30px;
+  margin-top: 30px;
+  padding: 15px 35px;
+  background: var(--branco);
+  color: var(--verde);
+  border-radius: 40px;
   text-decoration: none;
-  transition: 0.3s;
   font-weight: 600;
+  transition: 0.3s;
 }
 
 .btn:hover {
-  background: #fff;
-  color: #7F8C1B;
-  box-shadow: 0 0 25px #7F8C1B;
-  transform: scale(1.07);
+  background: var(--verde);
+  color: var(--branco);
+  box-shadow: 0 0 25px var(--verde);
+  transform: scale(1.08);
 }
 
 /* SEÇÕES */
 section {
-  padding: 80px 20px;
+  padding: 90px 20px;
   text-align: center;
 }
 
 h2 {
+  font-size: 34px;
   margin-bottom: 20px;
-  color: #7F8C1B;
-  font-size: 32px;
+  color: var(--verde);
 }
 
 /* CARDS */
@@ -87,30 +110,45 @@ h2 {
 }
 
 .card {
-  background: #515911;
-  padding: 30px;
+  background: var(--verde-escuro);
+  padding: 35px;
   width: 280px;
-  border-radius: 15px;
+  border-radius: 18px;
   transition: 0.3s;
-  color: #fff;
 }
 
 .card:hover {
-  transform: translateY(-10px) scale(1.05);
-  background: #7F8C1B;
-  box-shadow: 0 0 25px rgba(127, 140, 27, 0.6);
+  background: var(--verde);
+  transform: translateY(-12px) scale(1.05);
+  box-shadow: 0 0 30px rgba(127, 140, 27, 0.6);
 }
 
 .card h3 {
   margin-bottom: 10px;
 }
 
+/* RESULTADOS */
+.resultados p {
+  font-size: 18px;
+  max-width: 600px;
+  margin: auto;
+}
+
+/* CTA */
+.cta {
+  background: linear-gradient(135deg, var(--verde), var(--verde-escuro));
+}
+
+.cta h2 {
+  color: var(--branco);
+}
+
 /* FOOTER */
 footer {
-  background: #404040;
+  background: var(--cinza);
   padding: 40px;
   text-align: center;
-  border-top: 1px solid #7F8C1B;
+  border-top: 1px solid var(--verde);
   font-size: 14px;
   opacity: 0.8;
 }

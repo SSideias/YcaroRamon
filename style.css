@@ -194,3 +194,36 @@ footer {
 .whatsapp-btn.alt {
   background: #7F8C1B;
 }
+
+/* CARD CLICÁVEL */
+.clickable {
+  cursor: pointer;
+}
+
+/* CONTEÚDO ESCONDIDO */
+.hidden-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: 0.4s ease;
+  margin-top: 15px;
+}
+
+/* QUANDO ABRIR */
+.hidden-content.show {
+  max-height: 200px;
+}
+
+/* BOTÃO MENOR */
+.btn.small {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  font-size: 14px;
+}
+
+/* LOCALIZAÇÃO */
+.location {
+  margin-top: 10px;
+  font-size: 14px;
+  opacity: 0.9;
+}

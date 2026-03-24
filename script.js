@@ -13,3 +13,8 @@ function revealOnScroll() {
 
 window.addEventListener('scroll', revealOnScroll);
 window.addEventListener('load', revealOnScroll);
+
+function toggleBraganca() {
+  const info = document.getElementById("braganca-info");
+  info.classList.toggle("show");
+}

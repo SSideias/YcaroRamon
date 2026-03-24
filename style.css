@@ -8,13 +8,13 @@
 }
 
 body {
-  background: #0D0D0D;
+  background: #404040;
   color: #fff;
 }
 
 /* HERO */
 header {
-  background: linear-gradient(135deg, #515911, #7F8C1B);
+  background: linear-gradient(135deg, #7F8C1B, #515911);
   padding: 100px 20px;
   text-align: center;
   position: relative;
@@ -24,13 +24,13 @@ header {
 header::after {
   content: "";
   position: absolute;
-  width: 400px;
-  height: 400px;
+  width: 500px;
+  height: 500px;
   background: #7F8C1B;
-  filter: blur(150px);
-  top: -100px;
-  right: -100px;
-  opacity: 0.4;
+  filter: blur(160px);
+  top: -150px;
+  right: -150px;
+  opacity: 0.5;
 }
 
 header h1 {
@@ -42,7 +42,7 @@ header h1 {
 header p {
   margin-top: 10px;
   font-size: 18px;
-  opacity: 0.9;
+  opacity: 0.95;
 }
 
 /* BOTÃO */
@@ -50,19 +50,19 @@ header p {
   display: inline-block;
   margin-top: 25px;
   padding: 14px 30px;
-  background: transparent;
+  background: #7F8C1B;
   color: #fff;
-  border: 2px solid #7F8C1B;
   border-radius: 30px;
   text-decoration: none;
   transition: 0.3s;
-  position: relative;
+  font-weight: 600;
 }
 
 .btn:hover {
-  background: #7F8C1B;
-  box-shadow: 0 0 20px #7F8C1B;
-  transform: scale(1.05);
+  background: #fff;
+  color: #7F8C1B;
+  box-shadow: 0 0 25px #7F8C1B;
+  transform: scale(1.07);
 }
 
 /* SEÇÕES */
@@ -87,19 +87,18 @@ h2 {
 }
 
 .card {
-  background: rgba(64, 64, 64, 0.4);
-  backdrop-filter: blur(10px);
+  background: #515911;
   padding: 30px;
   width: 280px;
   border-radius: 15px;
   transition: 0.3s;
-  border: 1px solid rgba(127, 140, 27, 0.2);
+  color: #fff;
 }
 
 .card:hover {
-  transform: translateY(-10px) scale(1.03);
-  border: 1px solid #7F8C1B;
-  box-shadow: 0 0 25px rgba(127, 140, 27, 0.5);
+  transform: translateY(-10px) scale(1.05);
+  background: #7F8C1B;
+  box-shadow: 0 0 25px rgba(127, 140, 27, 0.6);
 }
 
 .card h3 {
@@ -108,10 +107,10 @@ h2 {
 
 /* FOOTER */
 footer {
-  background: #0D0D0D;
+  background: #404040;
   padding: 40px;
   text-align: center;
-  border-top: 1px solid #404040;
+  border-top: 1px solid #7F8C1B;
   font-size: 14px;
-  opacity: 0.7;
+  opacity: 0.8;
 }

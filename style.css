@@ -29,6 +29,32 @@ body { background: var(--cinza); color: var(--branco); }
 }
 
 /* HERO */
+
+.hero {
+  position: relative; /* necessário */
+  overflow: hidden;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 20px; /* controla o quanto ele desce */
+  left: 50%;
+  transform: translateX(-50%);
+
+  width: 400px; /* tamanho da imagem */
+  height: 400px;
+
+  background-image: url('imagens/ycaroramon.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+
+  opacity: 0.15; /* transparência */
+
+  z-index: 0;
+}
+
 .hero {
   background: linear-gradient(135deg, var(--verde), var(--verde-escuro));
   padding: 120px 20px;

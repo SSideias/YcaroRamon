@@ -20,14 +20,18 @@ document.querySelectorAll(".card.clickable").forEach(card => {
 
     const content = card.querySelector(".hidden-content");
 
+    if (!content) return;
+
     // fecha todos
-    document.querySelectorAll(".hidden-content").forEach(el => {
-      if (el !== content) {
-        el.classList.remove("show");
+    document.querySelectorAll(".card").forEach(c => {
+      if (c !== card) {
+        c.classList.remove("active");
+        c.querySelector(".hidden-content")?.classList.remove("show");
       }
     });
 
-    // abre o clicado
+    // alterna o atual
+    card.classList.toggle("active");
     content.classList.toggle("show");
 
   });

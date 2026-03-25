@@ -21,18 +21,15 @@ document.querySelectorAll(".card.clickable").forEach(card => {
   const title = card.querySelector("h3");
   const content = card.querySelector(".hidden-content");
 
-  if (!content || content.innerHTML.trim() === "") {
-    // se não tem conteúdo, não faz nada
-    return;
+  // só adiciona listener se houver conteúdo
+  if (content && content.innerHTML.trim() !== "") {
+    title.addEventListener("click", (e) => {
+      e.stopPropagation();
+
+      // alterna apenas o card clicado
+      card.classList.toggle("active");
+      content.classList.toggle("show");
+    });
   }
 
-  title.addEventListener("click", (e) => {
-    e.stopPropagation();
-
-    // alterna apenas o card clicado
-    card.classList.toggle("active");
-    content.classList.toggle("show");
-  });
-
-});
 });

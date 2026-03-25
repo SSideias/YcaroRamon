@@ -38,7 +38,7 @@ body { background: var(--cinza); color: var(--branco); }
 .hero::before {
   content: "";
   position: absolute;
-  top: 5px; /* controla o quanto ele desce */
+  top: -40px; /* controla o quanto ele desce */
   left: 50%;
   transform: translateX(-50%);
 
@@ -83,12 +83,12 @@ body { background: var(--cinza); color: var(--branco); }
 
 .subtitle {
   font-size: 20px;
-  margin-top: 10px;
+  margin-top: 80px;
   font-weight: 600;
 }
 
 .hero p {
-  margin-top: 10px;
+  margin-top: 80px;
   font-size: 18px;
   opacity: 0.95;
 }

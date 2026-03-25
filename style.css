@@ -237,37 +237,28 @@ footer {
 }
 
 /* SPLASH SCREEN */
-#splash {
-  position: fixed;
-  inset: 0; /* substitui top/left/width/height */
-  background: #404040;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  z-index: 99999;
-  transition: opacity 0.5s ease;
-}
-
-/* ANIMAÇÃO DE PULSO */
 #splash h1 {
-  font-size: 50px;
-  animation: pulse 1s infinite;
+  font-size: 40px;
+  animation: zoomIn 1.2s ease forwards;
 }
 
-/* KEYFRAMES */
-@keyframes pulse {
+/* ANIMAÇÃO */
+@keyframes zoomIn {
   0% {
-    transform: scale(1);
-    opacity: 0.7;
+    transform: scale(0.2);
+    opacity: 0;
+    filter: blur(10px);
   }
+
   50% {
-    transform: scale(1.15);
+    transform: scale(1.1);
     opacity: 1;
+    filter: blur(0);
   }
+
   100% {
-    transform: scale(1);
-    opacity: 0.7;
+    transform: scale(1.4);
+    opacity: 0;
+    filter: blur(5px);
   }
 }

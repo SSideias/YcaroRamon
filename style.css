@@ -98,8 +98,10 @@ body { background: var(--cinza); color: var(--branco); }
   opacity: 0.95;
 }
 
-.augusto {
-  margin-top: 40px; /* aumenta pra descer mais */
+@media (max-width: 768px) {
+  .augusto {
+    margin-top: 40px;
+  }
 }
 
 /* BOTÃO */

@@ -58,7 +58,7 @@ body { background: var(--cinza); color: var(--branco); }
 .hero {
 
   .nome-destaque {
-  margin-top: 40px; /* aumenta esse valor pra descer mais */
+  margin-top: 70px; /* aumenta esse valor pra descer mais */
 }
   
   background: linear-gradient(135deg, var(--verde), var(--verde-escuro));
@@ -273,7 +273,7 @@ footer {
 
 .nome-destaque {
   font-family: 'Goldman', sans-serif;
-  letter-spacing: 3px;
+  letter-spacing: 10px;
   text-transform: uppercase;
 }
 /* Container individual dos cards */

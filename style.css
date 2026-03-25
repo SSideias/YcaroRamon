@@ -38,7 +38,7 @@ body { background: var(--cinza); color: var(--branco); }
 .hero::before {
   content: "";
   position: absolute;
-  top: 20px; /* controla o quanto ele desce */
+  top: 5px; /* controla o quanto ele desce */
   left: 50%;
   transform: translateX(-50%);
 

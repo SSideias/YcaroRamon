@@ -36,3 +36,15 @@ document.querySelectorAll(".card.clickable").forEach(card => {
     content.classList.toggle("show");
   });
 });
+
+const logo = document.querySelector(".logo-fixa");
+
+window.addEventListener("scroll", () => {
+  const scrollY = window.scrollY;
+
+  if (scrollY > 300) { // ajuste esse valor
+    logo.classList.add("show");
+  } else {
+    logo.classList.remove("show");
+  }
+});

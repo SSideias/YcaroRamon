@@ -38,7 +38,7 @@ body {
   background-repeat: no-repeat;
   
   /* transparência */
-  opacity: 0.5; /* se quiser transparente só a imagem, veja a dica abaixo */
+  opacity: 10; /* se quiser transparente só a imagem, veja a dica abaixo */
 }
 
 /* CONTAINER */

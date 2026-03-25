@@ -20,8 +20,25 @@
 }
 
 body {
-  background: var(--cinza);
-  color: var(--branco);
+  background-color: var(--cinza); /* cor de base do seu site */
+  
+  /* imagem de fundo */
+  background-image: url('https://raw.githubusercontent.com/SEU_USUARIO/imagens-site/main/fundo.png');
+  
+  /* centraliza a imagem */
+  background-position: center center;
+  
+  /* mantém fixa na rolagem */
+  background-attachment: fixed;
+  
+  /* cobre a tela inteira proporcionalmente */
+  background-size: 80%; /* você pode ajustar de 50% a 100% */
+  
+  /* não repetir */
+  background-repeat: no-repeat;
+  
+  /* transparência */
+  opacity: 0.5; /* se quiser transparente só a imagem, veja a dica abaixo */
 }
 
 /* CONTAINER */

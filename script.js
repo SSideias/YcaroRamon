@@ -16,7 +16,12 @@ window.addEventListener('scroll', revealOnScroll);
 
 
 document.querySelectorAll(".card.clickable").forEach(card => {
-  card.addEventListener("click", () => {
+
+  const title = card.querySelector("h3");
+
+  title.addEventListener("click", (e) => {
+
+    e.stopPropagation();
 
     const content = card.querySelector(".hidden-content");
 
@@ -35,4 +40,5 @@ document.querySelectorAll(".card.clickable").forEach(card => {
     content.classList.toggle("show");
 
   });
+
 });

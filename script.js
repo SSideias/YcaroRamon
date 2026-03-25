@@ -27,13 +27,16 @@ document.querySelectorAll(".card.clickable").forEach(card => {
 
     if (!content) return;
 
-    // fecha todos
-    document.querySelectorAll(".card").forEach(c => {
-      if (c !== card) {
-        c.classList.remove("active");
-        c.querySelector(".hidden-content")?.classList.remove("show");
-      }
-    });
+   // fecha apenas cards que estão abertos
+document.querySelectorAll(".card.clickable").forEach(c => {
+  if (c !== card) {
+    const otherContent = c.querySelector(".hidden-content");
+    if (otherContent && otherContent.classList.contains("show")) {
+      c.classList.remove("active");
+      otherContent.classList.remove("show");
+    }
+  }
+});
 
     // alterna o atual
     card.classList.toggle("active");

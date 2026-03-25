@@ -170,11 +170,9 @@ h2 {
   box-shadow: 0 0 30px rgba(127, 140, 27, 0.6);
 }
 
-.card h3 {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  cursor: pointer;
+.card:not(.clickable) h3 {
+  justify-content: center;
+  text-align: center;
 }
 
 .arrow {

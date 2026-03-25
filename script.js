@@ -18,15 +18,3 @@ function toggleBraganca() {
   info.classList.toggle("show");
 }
 
-/* LOAD ÚNICO */
-window.addEventListener("load", () => {
-
-  revealOnScroll();
-
-  const splash = document.getElementById("splash");
-
-  setTimeout(() => {
-    splash.remove(); // 🔥 remove da tela de vez
-  }, 500);
-
-});

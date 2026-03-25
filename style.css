@@ -133,6 +133,10 @@ h2 {
 
 /* CARDS */
 
+.card {
+  margin-bottom: 20px;
+}
+
 .cards {
   gap: 40px; /* aumenta o espaço entre eles */
 }

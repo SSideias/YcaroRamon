@@ -13,10 +13,7 @@ function revealOnScroll() {
 
 window.addEventListener('scroll', revealOnScroll);
 
-function toggleBraganca() {
-  const info = document.getElementById("braganca-info");
-  info.classList.toggle("show");
-}
+
 
 document.querySelectorAll(".card.clickable").forEach(card => {
   card.addEventListener("click", () => {

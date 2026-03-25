@@ -39,12 +39,14 @@ document.querySelectorAll(".card.clickable").forEach(card => {
 
 const logo = document.querySelector(".logo-fixa");
 
-window.addEventListener("scroll", () => {
-  const scrollY = window.scrollY;
+window.addEventListener("DOMContentLoaded", () => {
+  const logo = document.querySelector(".logo-fixa");
 
-  if (scrollY > 300) { // ajuste esse valor
-    logo.classList.add("show");
-  } else {
-    logo.classList.remove("show");
-  }
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 300) {
+      logo.classList.add("show");
+    } else {
+      logo.classList.remove("show");
+    }
+  });
 });

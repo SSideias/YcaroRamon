@@ -27,11 +27,11 @@ document.querySelectorAll(".card.clickable").forEach(card => {
 
     if (!content) return;
 
-   // fecha apenas cards que estão abertos
+  // fecha apenas cards que têm conteúdo
 document.querySelectorAll(".card.clickable").forEach(c => {
   if (c !== card) {
     const otherContent = c.querySelector(".hidden-content");
-    if (otherContent && otherContent.classList.contains("show")) {
+    if (otherContent && otherContent.innerHTML.trim() !== "") {
       c.classList.remove("active");
       otherContent.classList.remove("show");
     }

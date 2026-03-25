@@ -237,12 +237,24 @@ footer {
 }
 
 /* SPLASH SCREEN */
+#splash {
+  position: fixed;
+  inset: 0;
+  background: #404040;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  z-index: 99999;
+  transition: opacity 0.5s ease;
+}
+
 #splash h1 {
   font-size: 40px;
   animation: zoomIn 1.2s ease forwards;
 }
 
-/* ANIMAÇÃO */
 @keyframes zoomIn {
   0% {
     transform: scale(0.2);

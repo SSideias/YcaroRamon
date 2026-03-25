@@ -23,7 +23,7 @@ body {
   background-color: var(--cinza); /* cor de base do seu site */
   
   /* imagem de fundo */
-  background-image: url('https://raw.githubusercontent.com/SEU_USUARIO/imagens-site/main/fundo.png');
+  background-image: url('imagens/ycaroramon.png');
   
   /* centraliza a imagem */
   background-position: center center;

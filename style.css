@@ -131,6 +131,17 @@ h2 {
 }
 
 /* CARDS */
+
+.cards {
+  gap: 40px; /* aumenta o espaço entre eles */
+}
+
+@media (max-width: 768px) {
+  .cards {
+    gap: 50px;
+  }
+}
+
 .cards {
   display: flex;
   flex-wrap: wrap;

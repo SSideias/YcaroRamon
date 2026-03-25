@@ -126,7 +126,19 @@ h2 {
 }
 
 .card h3 {
-  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.arrow {
+  transition: transform 0.3s ease;
+  font-size: 20px;
+}
+
+.card.active .arrow {
+  transform: rotate(45deg); /* vira um X estilizado */
 }
 
 /* RESULTADOS */
@@ -202,17 +214,18 @@ footer {
   cursor: pointer;
 }
 
-/* CONTEÚDO ESCONDIDO */
 .hidden-content {
   max-height: 0;
   overflow: hidden;
-  transition: 0.4s ease;
-  margin-top: 15px;
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: all 0.4s ease;
 }
 
-/* QUANDO ABRIR */
 .hidden-content.show {
-  max-height: 200px;
+  max-height: 300px;
+  opacity: 1;
+  transform: translateY(0);
 }
 
 /* BOTÃO MENOR */

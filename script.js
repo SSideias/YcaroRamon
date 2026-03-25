@@ -1,3 +1,4 @@
+// animação ao rolar
 function revealOnScroll() {
   const elements = document.querySelectorAll('.reveal');
 
@@ -14,34 +15,24 @@ function revealOnScroll() {
 window.addEventListener('scroll', revealOnScroll);
 
 
-
+// cards clicáveis
 document.querySelectorAll(".card.clickable").forEach(card => {
 
   const title = card.querySelector("h3");
+  const content = card.querySelector(".hidden-content");
+
+  if (!content || content.innerHTML.trim() === "") {
+    // se não tem conteúdo, não faz nada
+    return;
+  }
 
   title.addEventListener("click", (e) => {
-
     e.stopPropagation();
 
-    const content = card.querySelector(".hidden-content");
-
-    if (!content) return;
-
-  // fecha apenas cards que têm conteúdo
-document.querySelectorAll(".card.clickable").forEach(c => {
-  if (c !== card) {
-    const otherContent = c.querySelector(".hidden-content");
-    if (otherContent && otherContent.innerHTML.trim() !== "") {
-      c.classList.remove("active");
-      otherContent.classList.remove("show");
-    }
-  }
-});
-
-    // alterna o atual
+    // alterna apenas o card clicado
     card.classList.toggle("active");
     content.classList.toggle("show");
-
   });
 
+});
 });

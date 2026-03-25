@@ -248,4 +248,15 @@ footer {
   letter-spacing: 3px;
   text-transform: uppercase;
 }
+/* Container individual dos cards */
+.card-wrapper {
+  display: inline-block; /* permite que cada card se comporte de forma independente */
+  vertical-align: top;   /* alinha cards ao topo */
+  margin: 0 15px;        /* espaçamento entre eles */
+}
+
+/* Opcional: limitar o tamanho total */
+.unidades .container {
+  text-align: center;
+}
 

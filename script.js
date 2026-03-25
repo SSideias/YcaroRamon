@@ -18,3 +18,20 @@ function toggleBraganca() {
   info.classList.toggle("show");
 }
 
+document.querySelectorAll(".card.clickable").forEach(card => {
+  card.addEventListener("click", () => {
+
+    const content = card.querySelector(".hidden-content");
+
+    // fecha todos
+    document.querySelectorAll(".hidden-content").forEach(el => {
+      if (el !== content) {
+        el.classList.remove("show");
+      }
+    });
+
+    // abre o clicado
+    content.classList.toggle("show");
+
+  });
+});

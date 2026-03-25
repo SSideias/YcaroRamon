@@ -1,4 +1,6 @@
 /* FONTE */
+@import url('https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&display=swap');
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap');
 
 /* VARIÁVEIS (PROFISSIONAL) */
@@ -228,3 +230,8 @@ footer {
   opacity: 0.9;
 }
 
+.nome-destaque {
+  font-family: 'Goldman', sans-serif;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}

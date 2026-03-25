@@ -230,9 +230,9 @@ footer {
 
 .nome {
   font-family: 'Goldman', sans-serif;
-  color: black; /* cor padrão do resto */
+  color: var(--branco); /* mantém o resto branco */
 }
 
 .letra-destaque {
-  color: white;
+  color: white; /* só o Y */
 }

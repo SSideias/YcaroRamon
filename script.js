@@ -12,23 +12,29 @@ function revealOnScroll() {
 }
 
 window.addEventListener('scroll', revealOnScroll);
-window.addEventListener('load', revealOnScroll);
 
 function toggleBraganca() {
   const info = document.getElementById("braganca-info");
   info.classList.toggle("show");
 }
 
-// SPLASH SCREEN (1 segundo)
+/* LOAD ÚNICO */
 window.addEventListener("load", () => {
+
+  // ativa animações iniciais
+  revealOnScroll();
+
+  // SPLASH
+  const splash = document.getElementById("splash");
+
   setTimeout(() => {
-    const splash = document.getElementById("splash");
     splash.style.opacity = "0";
-    splash.style.transition = "0.5s";
+    splash.style.transition = "opacity 0.5s ease";
 
     setTimeout(() => {
-      splash.style.display = "none";
+      splash.remove(); // melhor que display:none
     }, 500);
 
   }, 1000);
+
 });

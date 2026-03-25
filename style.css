@@ -19,24 +19,7 @@
   font-family: 'Poppins', sans-serif;
 }
 
-body::before {
-  content: "";
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-
-  background-image: url('images/fundo.png');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 70%;
-
-  opacity: 0.15; /* só a imagem fica transparente */
-
-  pointer-events: none;
-  z-index: -1;
-}
+body { background: var(--cinza); color: var(--branco); }
 
 /* CONTAINER */
 .container {

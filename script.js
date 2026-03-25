@@ -31,7 +31,7 @@ window.addEventListener("load", () => {
     splash.style.opacity = "0";
     splash.style.transition = "opacity 0.5s ease";
 
-    setTimeout(() => {
+    setTimeout(() => {}, 1200);
       splash.remove(); // melhor que display:none
     }, 500);
 

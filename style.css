@@ -98,11 +98,6 @@ body { background: var(--cinza); color: var(--branco); }
   opacity: 0.95;
 }
 
-@media (max-width: 768px) {
-  .augusto {
-    margin-top: 40px;
-  }
-}
 
 /* BOTÃO */
 .btn {
@@ -158,8 +153,8 @@ h2 {
 
 .card {
   background: var(--verde-escuro);
-  padding: 35px;
-  width: 280px;
+  padding: 25px;
+  width: 240px;
   border-radius: 18px;
   transition: 0.3s;
 }

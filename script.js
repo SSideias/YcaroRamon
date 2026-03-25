@@ -21,20 +21,12 @@ function toggleBraganca() {
 /* LOAD ÚNICO */
 window.addEventListener("load", () => {
 
-  // ativa animações iniciais
   revealOnScroll();
 
-  // SPLASH
   const splash = document.getElementById("splash");
 
   setTimeout(() => {
-    splash.style.opacity = "0";
-    splash.style.transition = "opacity 0.5s ease";
-
-    setTimeout(() => {}, 500);
-      splash.remove(); // melhor que display:none
-    }, 500);
-
-  }, 1000);
+    splash.remove(); // 🔥 remove da tela de vez
+  }, 500);
 
 });

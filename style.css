@@ -9,6 +9,7 @@
   --verde-escuro: #515911;
   --cinza: #404040;
   --branco: #FFFFFF;
+  --verde-claro: #90EE90;
 }
 
 /* RESET */
@@ -156,7 +157,7 @@ h2 {
 }
 
 .card {
-  background: var(--verde-escuro);
+  background: var(--verde-claro);
   padding: 25px;
   width: 240px;
   border-radius: 18px;

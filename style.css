@@ -227,3 +227,7 @@ footer {
   font-size: 14px;
   opacity: 0.9;
 }
+
+.nome {
+  font-family: 'Goldman', sans-serif;
+}

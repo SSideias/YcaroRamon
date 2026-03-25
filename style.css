@@ -228,11 +228,3 @@ footer {
   opacity: 0.9;
 }
 
-.nome {
-  font-family: 'Goldman', sans-serif;
-  color: var(--branco); /* mantém o resto branco */
-}
-
-.letra-destaque {
-  color: white; /* só o Y */
-}

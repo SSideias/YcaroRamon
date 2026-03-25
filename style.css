@@ -315,5 +315,5 @@ footer {
   transform: translateY(20px);
 
   transition: 0.4s ease;
-  z-index: 999;
+  z-index: 9999;
 }

@@ -10,6 +10,7 @@ function revealOnScroll() {
   });
 }
 window.addEventListener('scroll', revealOnScroll);
+window.addEventListener('load', revealOnScroll); // 👈 ESSA LINHA RESOLVE
 
 // cards clicáveis
 document.querySelectorAll(".card.clickable").forEach(card => {

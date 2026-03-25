@@ -56,6 +56,11 @@ body { background: var(--cinza); color: var(--branco); }
 }
 
 .hero {
+
+  .nome-destaque {
+  margin-top: 40px; /* aumenta esse valor pra descer mais */
+}
+  
   background: linear-gradient(135deg, var(--verde), var(--verde-escuro));
   padding: 120px 20px;
   text-align: center;
